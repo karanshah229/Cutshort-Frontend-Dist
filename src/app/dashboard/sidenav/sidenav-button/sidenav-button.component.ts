@@ -5,7 +5,7 @@ import {
   transition,
   animate,
 } from '@angular/animations';
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav-button',
@@ -18,7 +18,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
         style({
           height: '0',
           overflow: 'hidden',
-          opacity: '0',
+          // opacity: '0',
           visibility: 'hidden',
         })
       ),
@@ -36,14 +36,32 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
   ],
 })
 export class SidenavButtonComponent implements OnInit {
+  @Input('border') border: Boolean = false;
   public expanded: boolean = false;
+  private selectedOption = '';
+
   @HostListener('click', ['$event'])
-  onClick(target: any) {
-    console.log(target.srcElement.hasAttribute('test'));
-    this.expanded = !this.expanded;
+  onClick2(event: any) {
+    console.log(event.target);
+    this.expanded = true;
+    event.stopPropagation();
+    if (event.target.tagName.toLowerCase() === 'option') {
+      this.selectedOption = event.target.getAttribute('val');
+      alert('You selected option with value: ' + this.selectedOption);
+      if (this.expanded) this.expanded = false;
+    }
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClick(event: any) {
+    if (this.expanded) this.expanded = false;
   }
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  get selectedOptionVal(): string {
+    return this.selectedOption;
+  }
 }

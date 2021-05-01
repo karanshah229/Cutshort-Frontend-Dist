@@ -18,6 +18,7 @@ import { SidenavButtonComponent } from './dashboard/sidenav/sidenav-button/siden
 import { SidenavRecentlyViewedComponent } from './dashboard/sidenav/sidenav-recently-viewed/sidenav-recently-viewed.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardContentComponent } from './dashboard/dashboard-content/dashboard-content.component';
+import { CardComponent } from 'src/UIComponents/card/card.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DashboardContentComponent } from './dashboard/dashboard-content/dashboa
     SidenavRecentlyViewedComponent,
     DashboardComponent,
     DashboardContentComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

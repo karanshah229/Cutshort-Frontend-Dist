@@ -1,7 +1,7 @@
 <nav fxLayout="column" fxLayoutAlign="start center">
-  <app-header>
+  <div class="home_icon">
     <span header-text class="material-icons material-icons-outlined">home</span>
-  </app-header>
+  </div>
   <section
     class="user-profile"
     fxLayout="column"
@@ -48,9 +48,9 @@
       >
       <span sidenav-link-text>Calendar</span>
     </app-sidenav-link>
-    <app-sidenav-button>
-      <div label fxLayoutAlign="space-between center" fxLayoutGap="1rem">
-        <div fxLayout fxLayoutGap="1rem">
+    <app-sidenav-button [border]="false">
+      <div label fxLayoutAlign="space-between end" fxLayoutGap="8px">
+        <div fxLayout fxLayoutAlign="start center" fxLayoutGap="1rem">
           <div class="material-icons material-icons-outlined">inbox</div>
           <div>Inbox</div>
         </div>
