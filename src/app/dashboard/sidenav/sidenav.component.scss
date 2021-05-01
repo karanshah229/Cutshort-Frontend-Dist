@@ -1,7 +1,8 @@
 nav {
   background: white;
-  width: 220px;
+  width: 240px;
   height: 100vh;
+  border-right: 1px solid hsl(225, 33%, 93%);
 }
 
 nav div {
@@ -10,7 +11,8 @@ nav div {
 
 section {
   border-bottom: 1px solid hsl(225, 33%, 93%);
-  padding-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  width: 100%;
 }
 
 .profile-icon {
@@ -36,4 +38,15 @@ section {
 
 .online {
   color: #30ad44;
+}
+
+.sidenav-links > *:not(div) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(225, 33%, 93%);
+}
+
+a[sidenav-dropdown-options] {
+  padding-left: calc(1rem + 24px);
+  padding-top: 1rem;
+  cursor: pointer;
 }

@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <label (click)="expanded = !expanded">
+    <ng-content select="[label]"></ng-content>
+  </label>
+  <div class="option-group" [@smoothCollapse]="!expanded ? 'initial' : 'final'">
+    <ng-content select="[option]"></ng-content>
+  </div>
+</div>

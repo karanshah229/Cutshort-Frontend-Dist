@@ -1,0 +1,92 @@
+<nav fxLayout="column" fxLayoutAlign="start center">
+  <app-header>
+    <span header-text class="material-icons material-icons-outlined">home</span>
+  </app-header>
+  <section
+    class="user-profile"
+    fxLayout="column"
+    fxLayoutGap="1rem"
+    style="padding: 1rem 0"
+  >
+    <div fxLayoutAlign="center end" class="profile-icon">
+      <img
+        src="https://placeimg.com/300/300/people"
+        class="rounded-image"
+        width="40%"
+      />
+      <span
+        class="material-icons material-icons-outlined profile-icon__settings-icon"
+        >settings</span
+      >
+    </div>
+    <div class="user-profile__details">
+      <div class="bold" fxLayoutAlign="center center">
+        Martha Blair
+        <span
+          [class]="
+            isOnline ? 'online material-icons' : 'offline material-icons'
+          "
+          >circle</span
+        >
+      </div>
+      <div class="light" style="font-size: smaller">Developer</div>
+    </div>
+  </section>
+  <section class="sidenav-links" fxLayout="column" fxLayoutGap="1rem">
+    <app-sidenav-dropdown>
+      <span sidenav-button-text fxLayoutAlign="star center" fxLayoutGap="1rem">
+        <span class="material-icons material-icons-outlined">dashboard</span>
+        <span>Dashboard</span>
+      </span>
+      <a sidenav-dropdown-options>Page Visitors</a>
+      <a sidenav-dropdown-options>Post Performance</a>
+      <a sidenav-dropdown-options>Team Overall</a>
+    </app-sidenav-dropdown>
+    <app-sidenav-link>
+      <span sidenav-link-icon class="material-icons material-icons-outlined"
+        >event</span
+      >
+      <span sidenav-link-text>Calendar</span>
+    </app-sidenav-link>
+    <app-sidenav-button>
+      <div label fxLayoutAlign="space-between center" fxLayoutGap="1rem">
+        <div fxLayout fxLayoutGap="1rem">
+          <div class="material-icons material-icons-outlined">inbox</div>
+          <div>Inbox</div>
+        </div>
+        <div fxLayout="column" fxLayoutGap="-10px">
+          <span class="material-icons m-18">arrow_drop_up</span>
+          <span class="material-icons m-18">arrow_drop_down</span>
+        </div>
+      </div>
+      <option option val="inbox">Inbox</option>
+      <option option val="sent_mail">Sent Mail</option>
+      <option option val="promotions">Promotions</option>
+      <option option val="spam">Spam</option>
+    </app-sidenav-button>
+    <app-sidenav-link>
+      <span sidenav-link-icon class="material-icons material-icons-outlined"
+        >receipt_long</span
+      >
+      <span sidenav-link-text>Invoicing</span>
+    </app-sidenav-link>
+    <app-sidenav-link>
+      <span sidenav-link-icon class="material-icons material-icons-outlined"
+        >science</span
+      >
+      <span sidenav-link-text>Lab / Experimental</span>
+    </app-sidenav-link>
+    <div>
+      <h5 class="light" style="text-align: start">
+        {{ "Recently Viewed" | uppercase }}
+      </h5>
+      <app-sidenav-recently-viewed
+        >Overall Performance</app-sidenav-recently-viewed
+      >
+      <app-sidenav-recently-viewed>Invoice #940</app-sidenav-recently-viewed>
+      <app-sidenav-recently-viewed
+        >Customer: Minerva Viewer</app-sidenav-recently-viewed
+      >
+    </div>
+  </section>
+</nav>

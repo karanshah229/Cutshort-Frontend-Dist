@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Routing Module
 import { AppRoutingModule } from './app-routing.module';
@@ -9,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 // Components
 import { AppComponent } from './app.component';
 import { Error404Component } from './error404/error404.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
 import { HeaderComponent } from 'src/UIComponents/header/header.component';
-import { SidenavLinkComponent } from './sidenav/sidenav-link/sidenav-link.component';
-import { SidenavDropdownComponent } from './sidenav/sidenav-dropdown/sidenav-dropdown.component';
-import { SidenavButtonComponent } from './sidenav/sidenav-button/sidenav-button.component';
-import { SidenavRecentlyViewedComponent } from './sidenav/sidenav-recently-viewed/sidenav-recently-viewed.component';
+import { SidenavLinkComponent } from './dashboard/sidenav/sidenav-link/sidenav-link.component';
+import { SidenavDropdownComponent } from './dashboard/sidenav/sidenav-dropdown/sidenav-dropdown.component';
+import { SidenavButtonComponent } from './dashboard/sidenav/sidenav-button/sidenav-button.component';
+import { SidenavRecentlyViewedComponent } from './dashboard/sidenav/sidenav-recently-viewed/sidenav-recently-viewed.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardContentComponent } from './dashboard/dashboard-content/dashboard-content.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +29,15 @@ import { SidenavRecentlyViewedComponent } from './sidenav/sidenav-recently-viewe
     SidenavDropdownComponent,
     SidenavButtonComponent,
     SidenavRecentlyViewedComponent,
+    DashboardComponent,
+    DashboardContentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FlexLayoutModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

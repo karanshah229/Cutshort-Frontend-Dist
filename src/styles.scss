@@ -8,13 +8,19 @@
 body {
   margin: 0;
   line-height: 1.6;
+  font-size: 13px;
   font-family: "Roboto", sans-serif;
   background: #fbfbfd;
 }
 
+a,
 img {
   max-width: 100%;
   display: block;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1,
@@ -35,6 +41,21 @@ p {
   -ms-user-select: none;
   user-select: none;
 }
+.material-icons.m-12 {
+  font-size: 12px;
+}
+.material-icons.m-18 {
+  font-size: 18px;
+}
+.material-icons.m-24 {
+  font-size: 24px;
+}
+.material-icons.m-36 {
+  font-size: 36px;
+}
+.material-icons.m-48 {
+  font-size: 48px;
+}
 
 .rounded-image {
   border-radius: 50%;
@@ -43,6 +64,9 @@ p {
 
 .light {
   color: hsl(225, 6%, 73%);
+}
+.lighter {
+  color: hsl(225, 6%, 40%);
 }
 .bold {
   font-weight: 700;

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidenavButtonComponent } from './sidenav-button.component';
+import { DashboardContentComponent } from './dashboard-content.component';
 
-describe('SidenavButtonComponent', () => {
-  let component: SidenavButtonComponent;
-  let fixture: ComponentFixture<SidenavButtonComponent>;
+describe('DashboardContentComponent', () => {
+  let component: DashboardContentComponent;
+  let fixture: ComponentFixture<DashboardContentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidenavButtonComponent ]
+      declarations: [ DashboardContentComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidenavButtonComponent);
+    fixture = TestBed.createComponent(DashboardContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
