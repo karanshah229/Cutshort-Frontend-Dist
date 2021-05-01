@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  background: #fbfbfd;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.material-icons {
+  color: #a8a9ae;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.light {
+  color: hsl(225, 6%, 73%);
+}
+.bold {
+  font-weight: 700;
+}
