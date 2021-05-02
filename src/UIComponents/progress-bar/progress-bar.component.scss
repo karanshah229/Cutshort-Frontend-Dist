@@ -1,0 +1,22 @@
+.progress-wrapper {
+  width: 100;
+  position: relative;
+  z-index: 0;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #0d64da;
+  border: 1px solid #0d64da;
+  margin-top: -8px;
+}
+
+.progress-after {
+  width: 100%;
+  height: 8px;
+  top: 0;
+  background: hsl(225, 33%, 93%);
+  border-radius: 5px;
+  z-index: 0;
+}

@@ -55,7 +55,7 @@ export class LineChartsComponent implements OnInit {
     },
     {
       title: 'Bounce Rate',
-      number: '73.67%',
+      number: '13.67%',
       percent: '-82.5%',
     },
     {
@@ -130,7 +130,7 @@ export class LineChartsComponent implements OnInit {
         // yellow
         backgroundColor: 'rgba(251,216,113,0.3)',
         borderColor: 'rgba(251,216,113,1)',
-        pointBackgroundColor: 'rgba(251,216,113,1))',
+        pointBackgroundColor: 'rgba(251,216,113,1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
         pointHoverBorderColor: 'rgba(251,216,113,1)',
@@ -139,8 +139,4 @@ export class LineChartsComponent implements OnInit {
   ];
   lineChartLegend = true;
   lineChartType: ChartType = 'line';
-
-  @ViewChild(BaseChartDirective, { static: true }) chart:
-    | BaseChartDirective
-    | undefined;
 }

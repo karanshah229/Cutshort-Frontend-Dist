@@ -23,6 +23,7 @@ import { ChartsModule } from 'ng2-charts';
 import { LineChartsComponent } from './dashboard/dashboard-content/line-charts/line-charts.component';
 import { TablesComponent } from './dashboard/dashboard-content/tables/tables.component';
 import { DailyVisitorsComponent } from './dashboard/dashboard-content/daily-visitors/daily-visitors.component';
+import { ProgressBarComponent } from 'src/UIComponents/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { DailyVisitorsComponent } from './dashboard/dashboard-content/daily-visi
     LineChartsComponent,
     TablesComponent,
     DailyVisitorsComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,

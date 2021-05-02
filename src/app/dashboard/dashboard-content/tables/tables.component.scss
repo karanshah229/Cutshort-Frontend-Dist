@@ -1,0 +1,25 @@
+table,
+th {
+  text-align: start;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px 2rem 10px 0;
+}
+
+td {
+  height: 60px;
+  padding-right: 2rem;
+  // padding: 1rem 2rem 1rem 0;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 2rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid hsl(225, 33%, 93%);
+}

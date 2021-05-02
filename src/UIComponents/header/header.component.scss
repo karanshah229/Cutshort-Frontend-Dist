@@ -1,5 +1,10 @@
 header {
-  padding: 1rem;
+  padding: 1rem 2rem;
   box-shadow: 0 0px 4px 0px hsl(0, 0%, 90%);
   background: #fff;
+}
+
+header h3 {
+  font-size: large;
+  font-weight: 400;
 }
