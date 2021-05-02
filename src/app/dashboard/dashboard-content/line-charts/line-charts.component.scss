@@ -1,0 +1,32 @@
+.card {
+  border-radius: 5px;
+  box-shadow: 0 0px 4px 0px hsl(0, 0%, 90%);
+  background: #fff;
+  padding: 2rem;
+}
+
+.canvas-wrapper {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.positive-growth.border,
+.negative-growth.border {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.positive-growth {
+  color: green;
+}
+
+.negative-growth {
+  color: red;
+}

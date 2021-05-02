@@ -19,6 +19,10 @@ import { SidenavRecentlyViewedComponent } from './dashboard/sidenav/sidenav-rece
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardContentComponent } from './dashboard/dashboard-content/dashboard-content.component';
 import { CardComponent } from 'src/UIComponents/card/card.component';
+import { ChartsModule } from 'ng2-charts';
+import { LineChartsComponent } from './dashboard/dashboard-content/line-charts/line-charts.component';
+import { TablesComponent } from './dashboard/dashboard-content/tables/tables.component';
+import { DailyVisitorsComponent } from './dashboard/dashboard-content/daily-visitors/daily-visitors.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,16 @@ import { CardComponent } from 'src/UIComponents/card/card.component';
     DashboardComponent,
     DashboardContentComponent,
     CardComponent,
+    LineChartsComponent,
+    TablesComponent,
+    DailyVisitorsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
