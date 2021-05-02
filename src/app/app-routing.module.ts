@@ -7,9 +7,10 @@ import { Error404Component } from './error404/error404.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
-    children: [{ path: 'dashboard', component: DashboardComponent }],
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
   },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '**', component: Error404Component },
 ];
 
