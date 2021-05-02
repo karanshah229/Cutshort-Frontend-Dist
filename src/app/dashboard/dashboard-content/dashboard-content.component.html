@@ -1,24 +1,6 @@
 <div fxLayout="column">
   <app-header>
     <div header-text>Dashboard</div>
-    <div header-content>
-      <app-sidenav-button [border]="true">
-        <div label fxLayoutAlign="space-between end" fxLayoutGap="1rem">
-          <div fxLayout fxLayoutAlign="start center" fxLayoutGap="8px">
-            <div class="material-icons material-icons-outlined">inbox</div>
-            <div>Inboxes</div>
-          </div>
-          <div fxLayout="column" fxLayoutGap="-10px">
-            <span class="material-icons m-18">arrow_drop_up</span>
-            <span class="material-icons m-18">arrow_drop_down</span>
-          </div>
-        </div>
-        <option option val="inbox">Inbox</option>
-        <option option val="sent_mail">Sent Mail</option>
-        <option option val="promotions">Promotions</option>
-        <option option val="spam">Spam</option>
-      </app-sidenav-button>
-    </div>
   </app-header>
   <main fxLayout="column" fxLayoutGap="2rem">
     <!-- App Visitors Component -->
