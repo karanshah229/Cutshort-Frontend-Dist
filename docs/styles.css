@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  background: #fbfbfd;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+a,
+img {
+  max-width: 100%;
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.material-icons {
+  color: #a8a9ae;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.material-icons.m-12 {
+  font-size: 12px;
+}
+.material-icons.m-18 {
+  font-size: 18px;
+}
+.material-icons.m-24 {
+  font-size: 24px;
+}
+.material-icons.m-36 {
+  font-size: 36px;
+}
+.material-icons.m-48 {
+  font-size: 48px;
+}
+.rounded-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.light {
+  color: #93969f;
+}
+.lighter {
+  color: #c9cacf;
+}
+.bold {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map*/
