@@ -1,8 +1,0 @@
-<div [class]="border ? 'wrapper wrapper-border' : 'wrapper'">
-  <label>
-    <ng-content select="[label]"></ng-content>
-  </label>
-  <div class="option-group" [@smoothCollapse]="!expanded ? 'initial' : 'final'">
-    <ng-content select="[option]"></ng-content>
-  </div>
-</div>
